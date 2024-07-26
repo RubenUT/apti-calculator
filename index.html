@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <div class="input-section">
+        <div class="flujo-box">
+            <h3>Valor del flujo</h3>
+            <input type="number" id="valor_flujo" required>
+        </div>
+        <div class="inversion-box">
+            <h3>Valor de la inversion</h3>
+            <input type="number" id="valor_inversion" required>
+        </div>
+        <div class="inflacion-box">
+            <h3>Tasa de inflacion</h3>
+            <input type="number" id="valor_tasa_inflacion" required>
+        </div>
+    </div>
+
+    <div class="input-section2">
+        <div class="interes-box">
+            <h3>Tasa de interes</h3>
+            <input type="number" id="valor_tasa_interes" required>
+        </div>
+
+        <div class="periodos-box">
+            <h3>Numero de periodos</h3>
+            <input type="number" id="valor_num_periodos" required>
+        </div>
+
+        <div class="descuento-box">
+            <h3>Tasa de descuento</h3>
+            <input type="number" id="valor_tasa_descuento" required>
+        </div>
+    </div>
+    <div class="input-btn">
+        <button onclick="enviar_datos()">Enviar</button>
+    </div>
+    <div class="menu" id="menu">
+        <h3>Haga clic sobre la operacion que desea realizar</h3><br>
+        <div class="btn-select">
+            <button onclick="rentabilidad()">1. Calculadora de rentabilidad</button>
+            <button onclick="retorno_inversion()">2. Calculadora de retorno de inversion</button>
+            <button onclick="rentabilidad_actualizada()">3. Calculadora de rentabilidad actualizada</button>
+            <button onclick="factor_capitalizacion()">4. Calculadora de factor de capitalizacion</button>
+            <button onclick="valor_presente_neto()">5. Calculadora de valor presente neto</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
